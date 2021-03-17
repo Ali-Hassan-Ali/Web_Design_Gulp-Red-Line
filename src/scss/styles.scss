@@ -1,0 +1,139 @@
+@import "../Bootstrap/functions";
+@import "../Bootstrap/variables";
+@import "pages/index";
+@import "pages/login";
+
+body {
+  background-color: #2D2D2D;
+  font-family: 'Cairo', sans-serif;
+  //margin-bottom: 10000px;
+  //overflow: hidden;
+}
+
+.fs-300 {
+  font-size: 21px;
+}
+
+/*end of body*/
+
+#banner {
+
+  .active {
+    border-bottom: solid #fff;
+    color: #263980;
+    transition: all 1.1s;
+  }
+
+  /*class active*/
+
+  .navbar {
+    background-color: #096898;
+    padding: 0;
+    font-size: 15px;
+
+    .navbar-brand {
+      //font-size: 37px;
+      padding: 0;
+    }
+
+    .nav-link:hover {
+      background: $danger;
+      color: #fff;
+      padding: 17px 8px 16px 8px;
+      transition: all 1.1s;
+    }
+
+    .nav-link {
+      color: #fff;
+      padding: 17px 8px 16px 8px;
+    }
+
+    .dropdown-menu {
+      background: $black;
+      padding: 0;
+      margin-top: 0px;
+    }
+
+    .dropdown-item {
+      color: white;
+    }
+
+    .dropdown-item:hover {
+      background: $danger;
+      transition: all 1.1s;
+    }
+
+  }
+
+  /*end of navbar*/
+
+}
+
+/*end of banner*/
+
+#slider {
+  .bg_slider {
+    background-image: url("../../dist/images/bg-slider.jpg");
+    width: 100%;
+  }
+}
+
+#OwlCarouse {
+  background-color: #4A4848;
+
+
+  padding: 100px 0 100px 0;
+
+  .category__name {
+    margin-bottom: 10px;
+  }
+
+  .item {
+    &:hover img {
+      opacity: .6;
+    }
+
+    &:hover .item__details {
+      opacity: 1;
+    }
+
+    .item__details {
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      bottom: 9rem;
+      top: 7rem;
+      opacity: 0;
+      transition: all .7s ease-in;
+    }
+
+    transition: 0.5s;
+  }
+
+  //end of item class
+
+  .item:hover {
+    transform: scale(1.1);
+    transition: all .4s ease-in;
+  }
+
+
+}
+
+//end of owl id
+
+#Our-Service {
+  .card-title {
+    border-bottom: solid #733838 12px;
+    padding-bottom: 10px;
+  }
+
+  .card {
+    background: #2277b8;
+  }
+}
+
+/*end of Our-Service*/
+
+
+

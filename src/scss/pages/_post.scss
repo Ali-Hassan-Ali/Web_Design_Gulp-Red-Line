@@ -1,0 +1,136 @@
+/****************************************** start of style pos *****************************************t*/
+.img-circle {
+  width: 177px;
+  border-radius: 50%;
+  border: -1px solid #fff;
+  margin: 0 auto;
+}
+
+.post .user-block {
+  margin-bottom: 15px
+}
+
+.user-block:before, .user-block:after {
+  content: " ";
+  display: table
+}
+
+.user-block:after {
+  clear: both
+}
+
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px
+}
+
+
+.box-comments .box-comment:after {
+  clear: both
+}
+
+
+.box-comments .username {
+  color: #444;
+  display: block;
+  font-weight: 600
+}
+
+
+.box-header:before, .box-body:before, .box-footer:before, .box-header:after, .box-body:after, .box-footer:after {
+  content: " ";
+  display: table
+}
+
+.box-header:after, .box-body:after, .box-footer:after {
+  clear: both
+}
+
+.widget-user .box-footer {
+  padding-top: 30px
+}
+
+/*rgis is images*/
+.img-sm, .img-md, .img-lg, .box-comments .box-comment img, .user-block.user-block-sm img {
+  float: left
+}
+
+.img-sm, .box-comments .box-comment img, .user-block.user-block-sm img {
+  width: 30px !important;
+  height: 30px !important
+}
+
+.box-comments .comment-text {
+  margin-left: 40px;
+  color: #555
+}
+
+/*this this images*/
+
+.login-box-body, .register-box-body {
+  background: #fff;
+  padding: 20px;
+  border-top: 0;
+  color: #666
+}
+
+.login-box-body .form-control-feedback, .register-box-body .form-control-feedback {
+  color: #777
+}
+
+.box-body .box-pane-right {
+  border-radius: 0 0 3px 0;
+}
+
+.box-footer {
+  border-radius: 0 0 3px 3px;
+  border-top: 1px solid #f4f4f4;
+  padding: 10px;
+  background-color: #fff
+}
+
+.box {
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.post {
+  border-bottom: 1px solid #d2d6de;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  color: #666
+}
+
+.img-sm + .img-push {
+  margin-left: 40px
+}
+
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative
+}
+
+.user-block img {
+  width: 40px;
+  height: 40px;
+  float: left
+}
+
+.user-block .username, .user-block .description, .user-block .comment {
+  display: block;
+  margin-left: 50px
+}
+
+/****************************************** end of style pos *****************************************t*/
+
+

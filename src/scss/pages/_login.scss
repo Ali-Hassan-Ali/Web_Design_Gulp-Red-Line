@@ -1,0 +1,19 @@
+#login {
+  height: 100vh;
+  position: relative;
+  background: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  .bg__login {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(5px);
+  }
+}
