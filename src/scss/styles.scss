@@ -1,6 +1,6 @@
 @import "../Bootstrap/functions";
 @import "../Bootstrap/variables";
-@import "pages/index";
+@import "pages/service";
 @import "pages/login";
 
 body {
@@ -13,6 +13,7 @@ body {
 .fs-300 {
   font-size: 21px;
 }
+
 
 /*end of body*/
 
@@ -78,6 +79,8 @@ body {
   }
 }
 
+/*end of slider*/
+
 #OwlCarouse {
   background-color: #4A4848;
 
@@ -134,6 +137,35 @@ body {
 }
 
 /*end of Our-Service*/
+#service {
+  .ser {
+    padding-top: 50px;
+  }
 
+  .container {
+    padding-bottom: 50px;
+  }
+}
 
+//end of services
 
+#footer {
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  .img {
+    width: 50px;
+    display: inline-block;
+  }
+}
+
+/*end of footer*/
+
+#social {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $dark;
+
+}
+
+/*end of social*/

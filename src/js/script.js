@@ -6,8 +6,13 @@ $("document").ready(function () {
         $(this).addClass("active");
     });
 
-    //nice Scroll
-    $("html").niceScroll({interval: 9e3});/*end of nice Scroll*/
+    $("a").click(function () {
+        var e = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(e).offset().top}, 1e3);
+    }),
+
+        //nice Scroll
+        $("html").niceScroll({interval: 9e3});/*end of nice Scroll*/
 
     $('#OwlCarouse .owl-category').owlCarousel({
         loop: false,
@@ -31,7 +36,7 @@ $("document").ready(function () {
             1500: {
                 items: 4
             },
-            200: {
+            2000: {
                 items: 6
             }
         }
