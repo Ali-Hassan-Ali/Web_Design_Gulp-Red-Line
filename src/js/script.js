@@ -1,18 +1,19 @@
-$("document").ready(function () {
+$("document").ready(function() {
 
     //click nav-link addClass and RemoveClass
-    $(".nav-link").click(function () {
+    $(".nav-link").click(function() {
         $(".navbar-nav .nav-link").removeClass("active");
         $(this).addClass("active");
     });
 
-    $("a").click(function () {
-        var e = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(e).offset().top}, 1e3);
-    }),
+
+    $("a").click(function() {
+            var e = $(this).attr("href");
+            $("html, body").animate({ scrollTop: $(e).offset().top }, 1e3);
+        }),
 
         //nice Scroll
-        $("html").niceScroll({interval: 9e3});/*end of nice Scroll*/
+        $("html").niceScroll({ interval: 9e3 }); /*end of nice Scroll*/
 
     $('#OwlCarouse .owl-category').owlCarousel({
         loop: false,
@@ -40,7 +41,14 @@ $("document").ready(function () {
                 items: 6
             }
         }
-    })
+    });
 
-});/*end of document ready*/
+    // $('.slider').height($(window).height());
 
+    // $(window).resize(function() {
+
+    //     $('.slider').height($(window).height());
+
+    // });
+
+}); /*end of document ready*/

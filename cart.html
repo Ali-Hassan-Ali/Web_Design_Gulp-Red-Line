@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Page Cart</title>
+    <!--Link Icon Title-->
+    <link href="./dist/images/logo.jpg" rel="icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="dist/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+
+    <!--font google-->
+    <link href=" https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+
+    <!-- vendor min  css -->
+    <link rel="stylesheet" type="text/css" href="dist/css/vendor.min.css">
+
+    <!-- min styles -->
+    <link rel="stylesheet" type="text/css" href="dist/css/min.min.css">
+
+    <!-- font arbic -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body>
+
+    <section id="banner">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 fixed-top">
+
+            <div class="container">
+                <a class="navbar-brand mt-2" href="./index.html">
+                    <img src="./dist/images/logo.jpg" alt="" width="60">
+                    <span class="text-danger fs-300 font-weight-bold" href="">REDLINE</span>
+                </a>
+                <a href="#" class="btn btn-danger mr-2" style="border-radius: 50%"><i class="fa fa-search"></i></a>
+                <a href="./cart.html" class="btn btn-danger mr-0" style="border-radius: 50%"><i class="fa fa-cart-plus"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse col-md-12" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./AllCategory.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Category 1</a>
+                                <a class="dropdown-item" href="#">Category 2</a>
+                                <a class="dropdown-item" href="#">Category 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">English</a>
+                                <a class="dropdown-item" href="#">Arabic</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <a href="./login.html" class="btn btn-danger m-1"><i class="fa fa-user"></i> Login</a>
+                        <a href="./Register.html" class="btn btn-outline-danger m-1"><i class="fa fa-user-plus"></i> Register</a>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <!--end of nav-->
+
+    </section>
+    <!--end of banner section-->
+
+    <div style="padding: 100px 100px">
+        <h1 class="text-center text-white">Shopping <span class="text-danger">Cart</span></h1>
+    </div>
+
+    <section id="cart" class="text-white">
+        <h1 class="text-center py-5 mb-5">Products</h1>
+        <div class="container">
+
+            <div class="shopping-cart">
+
+                <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Total</label>
+                </div>
+
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./dist/images/demo/004.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Nike Flex Form TR Women's Sneaker</div>
+                        <p class="product-description"> It has a lightweight, breathable mesh upper with forefoot cables for a locked-down fit.</p>
+                    </div>
+                    <div class="product-price">12.99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="product-removal">
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                    </div>
+                    <div class="product-line-price">25.98</div>
+                </div>
+
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./dist/images/demo/006.jpg">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">ULTRABOOST UNCAGED SHOES</div>
+                        <p class="product-description">Born from running culture, these men's shoes deliver the freedom of a cage-free design</p>
+                    </div>
+                    <div class="product-price">45.99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-removal">
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                    </div>
+                    <div class="product-line-price">45.99</div>
+                </div>
+
+                <div class="totals text-white">
+                    <div class="totals-item">
+                        <label>Subtotal</label>
+                        <div class="totals-value" id="cart-subtotal">71.97</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Tax (5%)</label>
+                        <div class="totals-value" id="cart-tax">3.60</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Shipping</label>
+                        <div class="totals-value" id="cart-shipping">15.00</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                        <label>Grand Total</label>
+                        <div class="totals-value" id="cart-total">90.57</div>
+                    </div>
+                </div>
+
+                <div class="py-5">
+                    <form action="">
+                        <input type="text" hidden>
+                        <input type="text" hidden>
+                        <input type="text" hidden>
+                        <button class="btn btn-outline-light col-12">Add <i class="fa fa-plus"></i></button>
+                    </form>
+                    <a href="./AllCategory.html" class="btn btn-danger col-12 my-2">shop <i class="fa fa-cart-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="text-white">
+        <h2 class="text-center">Contct <span class="text-danger">Us</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="log-soci">
+                        <div class="logo-ft">
+                            <figure><img src="./dist/images/logo.jpg" alt="" width="50px">
+                                <span class="text-danger pb-2 font-weight-bold" style="font-size: 30px">ReadLine</span>
+                            </figure>
+                            <p>
+                                Add the specified package to the local cache. This command is primarily intended to be used internally by npm, but it can provide a way to add data to the local installation cache explicitly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-0 px-md-5">
+                    <ul class="list-contact mt-5 pb-5 px-3" style="list-style: none">
+                        <li>
+                            <p><i class="fa fa-phone text-danger fa-2x"></i> - (+800) 123 456 7890</p>
+                        </li>
+                        <li>
+                            <p><i class="fa fa-envelope text-danger fa-2x"></i> - ReaLine@gmail.com</p>
+                        </li>
+                        <li>
+                            <p><i class="fa fa-whatsapp text-danger fa-2x"></i> - (+800) 123 456 7890</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="payment">
+                        <p>Payment Methods</p>
+                        <ul style="list-style: none" class="pl-0 pt-4">
+                            <li class="img mr-5"><img src="./dist/images/pay/11.png" width="70" height="70"></li>
+                            <li class="img mr-5"><img src="./dist/images/pay/12.jpg" width="70" height="70"></li>
+                            <li class="img mr-5"><img src="./dist/images/pay/13.png" width="70" height="70"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="social">
+        <div class="container d-flex justify-content-center">
+            <a class="p-2" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+            <a class="p-2 text-danger" href="#"><i class="fa fa-google fa-2x"></i></a>
+            <a class="p-2" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+            <a class="p-2 text-danger" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <!-- vendor  js -->
+    <script src="dist/js/vendor.min.js"></script>
+
+    <!-- min scripts -->
+    <script src="dist/js/main.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            /* Set rates + misc */
+            var taxRate = 0.05;
+            var shippingRate = 15.00;
+            var fadeTime = 300;
+
+
+            /* Assign actions */
+            $('.product-quantity input').change(function() {
+                updateQuantity(this);
+            });
+
+            $('.product-removal button').click(function() {
+                removeItem(this);
+            });
+
+
+            /* Recalculate cart */
+            function recalculateCart() {
+                var subtotal = 0;
+
+                /* Sum up row totals */
+                $('.product').each(function() {
+                    subtotal += parseFloat($(this).children('.product-line-price').text());
+                });
+
+                /* Calculate totals */
+                var tax = subtotal * taxRate;
+                var shipping = (subtotal > 0 ? shippingRate : 0);
+                var total = subtotal + tax + shipping;
+
+                /* Update totals display */
+                $('.totals-value').fadeOut(fadeTime, function() {
+                    $('#cart-subtotal').html(subtotal.toFixed(2));
+                    $('#cart-tax').html(tax.toFixed(2));
+                    $('#cart-shipping').html(shipping.toFixed(2));
+                    $('#cart-total').html(total.toFixed(2));
+                    if (total == 0) {
+                        $('.checkout').fadeOut(fadeTime);
+                    } else {
+                        $('.checkout').fadeIn(fadeTime);
+                    }
+                    $('.totals-value').fadeIn(fadeTime);
+                });
+            }
+
+
+            /* Update quantity */
+            function updateQuantity(quantityInput) {
+                /* Calculate line price */
+                var productRow = $(quantityInput).parent().parent();
+                var price = parseFloat(productRow.children('.product-price').text());
+                var quantity = $(quantityInput).val();
+                var linePrice = price * quantity;
+
+                /* Update line price display and recalc cart totals */
+                productRow.children('.product-line-price').each(function() {
+                    $(this).fadeOut(fadeTime, function() {
+                        $(this).text(linePrice.toFixed(2));
+                        recalculateCart();
+                        $(this).fadeIn(fadeTime);
+                    });
+                });
+            }
+
+
+            /* Remove item from cart */
+            function removeItem(removeButton) {
+                /* Remove row from DOM and recalc cart total */
+                var productRow = $(removeButton).parent().parent();
+                productRow.slideUp(fadeTime, function() {
+                    productRow.remove();
+                    recalculateCart();
+                });
+            }
+
+        });
+    </script>
+
+</body>

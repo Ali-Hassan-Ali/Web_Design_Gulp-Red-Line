@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Home Page</title>
+    <title>Show Prouduc</title>
     <!--Link Icon Title-->
     <link href="./dist/images/logo.jpg" rel="icon">
 
@@ -39,11 +39,11 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 fixed-top">
 
             <div class="container">
-                <a class="navbar-brand mt-2" href="./index.html">
+                <a href="./index.html" class="navbar-brand mt-2" href="./index.html">
                     <img src="./dist/images/logo.jpg" alt="" width="60">
                     <span class="text-danger fs-300 font-weight-bold" href="">REDLINE</span>
                 </a>
-                <a href="" class="btn btn-danger mr-2" style="border-radius: 50%"><i class="fa fa-search"></i></a>
+                <a href="#" class="btn btn-danger mr-2" style="border-radius: 50%"><i class="fa fa-search"></i></a>
                 <a href="./cart.html" class="btn btn-danger mr-0" style="border-radius: 50%"><i class="fa fa-cart-plus"></i></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
                             <a class="nav-link" href="./AllCategory.html">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#service">Our Services</a>
+                            <a class="nav-link" href="#service">Service</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -85,7 +85,7 @@
                     </ul>
                     <ul class="navbar-nav mr-auto">
                         <a href="./login.html" class="btn btn-danger m-1"><i class="fa fa-user"></i> Login</a>
-                        <a href="" class="btn btn-outline-danger m-1"><i class="fa fa-user-plus"></i> Register</a>
+                        <a href="./Register.html" class="btn btn-outline-danger m-1"><i class="fa fa-user-plus"></i> Register</a>
                     </ul>
                 </div>
             </div>
@@ -96,10 +96,67 @@
     </section>
     <!--end of banner section-->
 
-    <section id="slider">
-        <div class="bg_slider mt-5">
-            <img src="./dist/images/bg-slider.jpg" class="slider" alt="" width="100%">
+    <div style="padding: 120px 0px 95px 0px">
+        <h1 class="text-center text-white m-0">Show <span class="text-danger">Product</span></h1>
+    </div>
+
+    <section id="product" class="bg-danger py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./dist/images/demo/006.jpg" class="imgBx" alt="" style="width: 100%;">
+                </div>
+                <div class="col-md-8 text-white">
+                    <h4 class="text-dark mt-sm-5 mt-md-0">Name Product</h4>
+                    <p>
+                        Add the specified package to the local cache. This command is primarily intended to be used internally by npm, but it can provide a way to add data to the local installation cache explicitly
+                    </p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <h5>Name </h5>
+                                </th>
+                                <th>Teshert</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5>Size </h5>
+                                </th>
+                                <th>xx-larg</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5>Color </h5>
+                                </th>
+                                <th>white</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <h5>sals</h5>
+                                </th>
+                                <th>$70</th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="row mt-5 container">
+
+                        <form action="">
+                            <input type="number" name="" hidden>
+                            <input type="number" name="" hidden>
+                            <a href="./cart.html" class="btn btn-outline-light"><i class="fa fa-cart-plus"></i> Add Cart</a>
+                        </form>
+
+                        <a href="./AllCategory.html" class="btn btn-light ml-2">Shop</a>
+                    </div>
+
+                </div>
+                <!--      end of col md 8-->
+            </div>
+            <!--        end of row-->
         </div>
+        <!--    end of container-->
     </section>
 
     <section id="OwlCarouse">
@@ -162,7 +219,7 @@
                         <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
                             <i class="fa fa-cart-plus"></i> Add Card
                         </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
+                        <a href=./show.html class="btn btn-outline-light col-md-12">
                             <i class="fa fa-eye">
                         </i> Show Product
                         </a>
@@ -242,177 +299,8 @@
 
         </div>
 
-
-        <div class="row text-white justify-content-between category__name">
-            <h4 class="mr-sm-0 ml-5">Name Category</h4>
-            <a href="" class="mr-5 mr-5 text-danger align-self-center">See ALl
-        </a>
-        </div>
-
-        <div class="owl-carousel owl-category">
-            <div class="item">
-                <img src="./dist/images/demo/001.jpg" width="1080" height="320" alt="">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/002.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/003.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/004.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/005.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/006.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/007.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/008.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn-danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./dist/images/demo/009.jpg" alt="" height="320">
-                <div class="item__details">
-                    <div class="row">
-                        <a href="./cart.html" class="btn btn  -danger col-md-12 mb-2">
-                            <i class="fa fa-cart-plus"></i> Add Card
-                        </a>
-                        <a href="./show.html" class="btn btn-outline-light col-md-12">
-                            <i class="fa fa-eye">
-                        </i> Show Product
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
         <div class="container d-flex justify-content-center pt-5">
             <a href="./AllCategory.html" class="btn btn-outline-light btn-sm">All Category</a>
-        </div>
-    </section>
-
-    <section id="service" class="text-white bg-dark py-5">
-        <h2 class="text-center pb-4 ser">Our <span class="text-danger">Services</span></h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card border-0 shadow rounded-xs pt-5 bg-danger">
-                        <div class="card-body">
-                            <i class="fa fa-viadeo icon-lg icon-primary icon-bg-primary icon-bg-circle mb-3"></i>
-                            <h4 class="mt-4 mb-3">Occasions</h4>
-                            <p>For what reason would it be advisable for me to think about business content?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card border-0 shadow rounded-xs pt-5 bg-danger">
-                        <div class="card-body"><i class="fa fa-handshake-o icon-lg icon-yellow icon-bg-yellow icon-bg-circle mb-3"></i>
-                            <h4 class="mt-4 mb-3">Social Activity</h4>
-                            <p>For what reason would it be advisable for me to think about business content?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card border-0 shadow rounded-xs pt-5 bg-danger">
-                        <div class="card-body"><i class="fa fa-truck icon-lg icon-purple icon-bg-purple icon-bg-circle mb-3"></i>
-                            <h4 class="mt-4 mb-3">Wholesale Sale</h4>
-                            <p>For what reason would it be advisable for me to think about business content?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
