@@ -1,0 +1,39 @@
+#Owl-Product {
+    .image-product {
+        padding: 10px;
+    }
+    .search-product {
+        border-radius: 15px;
+        border-color: #fff;
+    }
+    background-color: #4A4848;
+    // padding: 100px 0 100px 0;
+    .item {
+        &:hover img {
+            opacity: .6;
+        }
+        &:hover .item__details {
+            opacity: 1;
+            top: -14rem;
+            left: 0px;
+            right: 30px;
+            bottom: 9rem;
+        }
+        .item__details {
+            position: relative;
+            width: 200px;
+            left: 30px;
+            right: 30px;
+            bottom: 9rem;
+            top: 7rem;
+            opacity: 0;
+            transition: all .7s ease-in;
+        }
+        transition: 0.5s;
+    }
+    //end of item class
+    .item:hover {
+        transform: scale(1.1);
+        transition: all .4s ease-in;
+    }
+}

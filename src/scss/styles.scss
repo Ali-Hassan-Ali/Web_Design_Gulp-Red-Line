@@ -4,6 +4,7 @@
 @import "pages/cart";
 @import "pages/service";
 @import "pages/product";
+@import "pages/search";
 body {
     background-color: #2D2D2D;
     font-family: 'Cairo', sans-serif;
@@ -13,6 +14,10 @@ body {
 
 .fs-300 {
     font-size: 21px;
+}
+
+img {
+    border-radius: 10%;
 }
 
 
