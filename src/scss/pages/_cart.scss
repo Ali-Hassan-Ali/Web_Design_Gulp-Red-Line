@@ -255,3 +255,31 @@
             width: 40%;
         }
     }
+    
+    $shopping-cart-red: #DF0000;
+    .fa-stack[data-count]:after {
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        content: attr(data-count);
+        font-size: 40%;
+        padding: .6em;
+        border-radius: 999px;
+        line-height: .75em;
+        color: white;
+        color: $shopping-cart-red;
+        text-align: center;
+        min-width: 2em;
+        font-weight: bold;
+        background: white;
+        border-style: solid;
+    }
+    
+    .fa-circle {
+        color: #DF0000;
+    }
+    
+    .red-cart {
+        color: #DF0000;
+        background: white;
+    }

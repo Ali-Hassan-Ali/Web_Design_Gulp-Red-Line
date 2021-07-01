@@ -1,3 +1,86 @@
+.search-container .btn {
+    margin-top: -3px;
+    border-radius: 50px
+}
+
+.search-container {
+    height: 30px;
+    border-radius: 30px;
+    padding: 17px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+}
+
+.search-container:hover>.search-input {
+    width: 200px;
+    z-index: 100000000;
+}
+
+.search-container .search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+}
+
+.search-container .search-btn .fa {
+    color: #fff;
+}
+
+@keyframes hoverShake {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+    25% {
+        transform: skew(5deg, 5deg);
+    }
+    75% {
+        transform: skew(-5deg, -5deg);
+    }
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+.search-container:hover {
+    animation: 0.1s linear;
+    border: solid #fff 2px;
+}
+
+@media only screen and (max-width: 540px) {
+    .search-container {
+        // border: solid #fff 2px;
+        position: absolute;
+        left: 270px;
+        right: 50px;
+        top: 16px //   margin: 20px 100px 300px;
+    }
+    .search-container .search-input {
+        display: flix;
+        justify-content: center;
+    }
+    .search-container:hover {
+        left: 10px;
+        right: 50px;
+        top: 100px;
+        display: flix;
+        margin: auto;
+    }
+}
+
 #Owl-Product {
     .image-product {
         padding: 10px;

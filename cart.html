@@ -39,32 +39,72 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 fixed-top">
 
             <div class="container">
-                <a class="navbar-brand mt-2" href="./index.html">
-                    <img src="./dist/images/logo.jpg" alt="" width="60">
-                    <span class="text-danger fs-300 font-weight-bold" href="">REDLINE</span>
+                <a class="navbar-brand p-0 hvr-grow wow pulse" data-wow-duration="4s" data-wow-offset="0" href="./index.html">
+                    <img src="./dist/images/logo.png" alt="" width="200px">
+                    <span class="text-danger fs-300 font-weight-bold" href=""></span>
                 </a>
-                <a href="./search.html" class="btn btn-danger mr-2" style="border-radius: 50%"><i class="fa fa-search"></i></a>
-                <a href="./cart.html" class="btn btn-danger mr-0" style="border-radius: 50%"><i class="fa fa-cart-plus"></i></a>
+
+                <div class="dropdown mr-5 mr-md-0 ml-0 ml-md-5">
+                    <span class="fa-stack fa-2x has-badge" data-count="2" style="font-size: 22px;">
+                        <i class="fa fa-circle fa-stack-2x d-flex justify-content-center"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse d-flex justify-content-center"></i>
+                    </span>
+                    <div class="dropdown-content mr-sm-2">
+                        <div class="">
+                            <div class="item-cart row">
+                                <img src="./dist/images/demo/004.jpg" class="px-3 border-image" alt="" width="100">
+                                <small class="text-flix">Producte ditalse ditalse ditalse ditalse ditalse ditalse 
+                                    <br>20$
+                                </small>
+                            </div>
+                            <div class="item-cart row mt-3">
+                                <img src="./dist/images/demo/006.jpg" class="px-3 border-image" alt="" width="100">
+                                <small class="text-flix">Producte ditalse
+                                    <br>10$
+                                </small>
+                            </div>
+                        </div>
+                        <div class="btn btn-dark d-block my-2 border-10">
+                            <small>Totle Price 30$</small>
+                        </div>
+                        <a href="./cart.html" class="btn btn-danger btn-sm borderi mt-3 px-2 py-1 mr-3">go to card</a>
+                        <a href="./cart.html" class="btn btn-outline-light btn-sm borderi mt-3 px-2 py-1">go to card</a>
+                    </div>
+                </div>
+
+                <!-- <span class="fa-stack fa-2x has-badge mx-md-5" data-count="5" style="font-size: 22px;">
+                    <i class="fa fa-circle fa-stack-2x d-flex justify-content-center"></i>
+                    <i class="fa fa-shopping-cart fa-stack-1x fa-inverse d-flex justify-content-center"></i>
+                </span> -->
+
+                <div id="searching" class="search-container bg-transparent ml-3">
+                    <input type="text" name="search" placeholder="Search..." class="search-input text-light">
+                    <a href="#" class="search-btn btn btn btn-danger">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+                <!-- <a href="./search.html" class="btn btn-danger mr-2 ml-sm-0 ml-md-3" style="border-radius: 50%"><i class="fa fa-search"></i></a> -->
+                <!-- <a href="./cart.html" class="btn btn-danger mr-0" style="border-radius: 50%"><i class="fa fa-cart-plus"></i></a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-                <div class="collapse navbar-collapse col-md-12" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto">
+                <div class="collapse navbar-collapse col-md-8" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto wow flipInX" data-wow-duration="4s" data-wow-offset="0">
                         <li class="nav-item">
                             <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./AllCategory.html">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service">Service</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#service">Our Services</a>
+                        </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Category
                         </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu border-none" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Category 1</a>
                                 <a class="dropdown-item" href="#">Category 2</a>
                                 <a class="dropdown-item" href="#">Category 3</a>
@@ -74,7 +114,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Language
                         </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu border-none" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">English</a>
                                 <a class="dropdown-item" href="#">Arabic</a>
                             </div>
@@ -84,8 +124,8 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav mr-auto">
-                        <a href="./login.html" class="btn btn-danger m-1"><i class="fa fa-user"></i> Login</a>
-                        <a href="./Register.html" class="btn btn-outline-danger m-1"><i class="fa fa-user-plus"></i> Register</a>
+                        <a href="./login.html" class="btn btn-danger m-1 hvr-pop"><i class="fa fa-user"></i> Login</a>
+                        <a href="./Register.html" class="btn btn-outline-danger m-1 hvr-pop"><i class="fa fa-user-plus"></i> Register</a>
                     </ul>
                 </div>
             </div>
@@ -170,6 +210,19 @@
                         <label>Grand Total</label>
                         <div class="totals-value" id="cart-total">90.57</div>
                     </div>
+                    <!-- <div class="totals-item totals-item-total">
+                        <form action="">
+                            <input type="text" name="copun" placeholder="Enter Copun" class="form-control col-2 d-flix justify-content-start">
+                        </form>
+                    </div> -->
+                    <div class="">
+                        <div class="input-group d-flex justify-content-end">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-danger px-4"><i class="fa fa-plus"></i></button>
+                            </div>
+                            <input type="text" class="form-control col-12 col-md-3 bg-transparent text-light" placeholder="Enter Coupn">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="py-5">
@@ -187,39 +240,46 @@
     </section>
 
     <section id="footer" class="text-white">
-        <h2 class="text-center">Contct <span class="text-danger">Us</span></h2>
+        <h2 class="text-center wow flash" data-wow-duration="4s" data-wow-offset="0">Contct <span class="text-danger">Us</span></h2>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row pt-5 mt-md-0">
+                <div class="col-md-4 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="0">
                     <div class="log-soci">
-                        <div class="logo-ft">
-                            <figure><img src="./dist/images/logo.jpg" alt="" width="50px">
-                                <span class="text-danger pb-2 font-weight-bold" style="font-size: 30px">ReadLine</span>
-                            </figure>
+                        <div class="logo-ft col-0">
+                            <img src="./dist/images/logo.png" alt="" width="240px">
                             <p>
                                 Add the specified package to the local cache. This command is primarily intended to be used internally by npm, but it can provide a way to add data to the local installation cache explicitly.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 px-0 px-md-5">
-                    <ul class="list-contact mt-5 pb-5 px-3" style="list-style: none">
+                <div class="social-flix col-md-4 px-0 ml-3 ml-md-0 mx-md-auto wow bounceInUp" data-wow-duration="2s" data-wow-offset="0">
+                    <ul class="list-contact mt-5 pb-5 px-3 mr-sm-5" style="list-style: none">
                         <li>
-                            <p><i class="fa fa-phone text-danger fa-2x"></i> - (+800) 123 456 7890</p>
+                            <p class="row">
+                                <i class="fa fa-phone fa-1x text-danger d-flex align-items-center justify-content-center mr-2" style="border-radius: 100px; width: 30px; height: 30px; background-color: #fff;">
+                            </i> - (+800) 123 456 7890
+                            </p>
                         </li>
                         <li>
-                            <p><i class="fa fa-envelope text-danger fa-2x"></i> - ReaLine@gmail.com</p>
+                            <p class="row">
+                                <i class="fa fa-envelope text-danger fa-1x d-flex align-items-center justify-content-center mr-2" style="border-radius: 100px; width: 30px; height: 30px; background-color: #fff;">
+                                </i>- ReaLine@gmail.com
+                            </p>
                         </li>
                         <li>
-                            <p><i class="fa fa-whatsapp text-danger fa-2x"></i> - (+800) 123 456 7890</p>
+                            <p class="row">
+                                <i class="fa fa-whatsapp text-danger fa-1x d-flex align-items-center justify-content-center mr-2" style="border-radius: 50px; width: 30px; height: 30px; background-color: #fff;">
+                                </i> - (+800) 123 456 7890
+                            </p>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow bounceInRight" data-wow-duration="2s" data-wow-offset="0">
                     <div class="payment">
                         <p>Payment Methods</p>
                         <ul style="list-style: none" class="pl-0 pt-4">
-                            <li class="img mr-5"><img src="./dist/images/pay/11.png" width="70" height="70"></li>
+                            <li class="img mr-5 Pop"><img src="./dist/images/pay/11.png" width="70" height="70" class="Pop"></li>
                             <li class="img mr-5"><img src="./dist/images/pay/12.jpg" width="70" height="70"></li>
                             <li class="img mr-5"><img src="./dist/images/pay/13.png" width="70" height="70"></li>
                         </ul>
@@ -230,11 +290,19 @@
     </section>
 
     <footer id="social">
-        <div class="container d-flex justify-content-center">
-            <a class="p-2" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-            <a class="p-2 text-danger" href="#"><i class="fa fa-google fa-2x"></i></a>
-            <a class="p-2" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-            <a class="p-2 text-danger" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+        <div class="container d-flex justify-content-around col-7 col-md-2 wow bounceInUp" data-wow-duration="3s" data-wow-offset="0">
+            <a class="p-2 bordering d-flex align-items-center justify-content-center wow hvr-push" href="#">
+                <i class="fa fa-facebook fa-1x d-flex align-items-center justify-content-center"></i>
+            </a>
+            <a class="p-2 text-danger bordering d-flex align-items-center justify-content-center hvr-push" href="#">
+                <i class="fa fa-google fa-1x d-flex align-items-center justify-content-center"></i>
+            </a>
+            <a class="p-2 bordering d-flex align-items-center justify-content-center hvr-push" href="#">
+                <i class="fa fa-twitter fa-1x"></i>
+            </a>
+            <a class="p-2 text-danger bordering d-flex align-items-center justify-content-center hvr-push" href="#">
+                <i class="fa fa-instagram fa-1x"></i>
+            </a>
         </div>
     </footer>
 

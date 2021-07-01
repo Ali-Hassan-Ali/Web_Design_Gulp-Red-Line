@@ -1,0 +1,29 @@
+#image {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .image-gallery {
+        margin-top: 15px;
+    }
+
+    .hovering img:hover {
+        opacity: .6;
+        .icon-image {
+            display: block;
+        }
+    }
+
+    .icon-image {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: 1000000000000000;
+        display:none;
+    
+    }
+
+    .fancybox-image, .fancybox-spaceball {
+        border: solid red 3px !important;
+    }
+    
+}

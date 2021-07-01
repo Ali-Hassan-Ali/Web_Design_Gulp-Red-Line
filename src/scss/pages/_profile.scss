@@ -1,0 +1,40 @@
+#profile {
+    background-color: black;
+    // #profileImage:hover {
+    //     border: solid red;
+    //     background-color: #ddd;
+    //     transition: .7s ease-in;
+    // }
+    #imageUpload {
+        display: none;
+    }
+    #profileImage {
+        cursor: pointer;
+        border: none;
+        margin: 0px;
+    }
+    #profile-container {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        border: solid red;
+    }
+    #profile-container img {
+        width: 150px;
+        height: 150px;
+    }
+}//end of id profile
+.anmation-color {
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
